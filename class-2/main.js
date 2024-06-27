@@ -120,7 +120,7 @@ console.log(
 const countBs = (myStr) => {
   let count = 0;
 
-  for (let i = 0; i < myStr.length - 1; i++) {
+  for (let i = 0; i <= myStr.length - 1; i++) {
     if (myStr[i] === "B" || myStr[i] === "b") {
       count++;
     }
@@ -140,7 +140,7 @@ console.log(
 
 const countChar = (myStr, myChar) => {
   let count = 0;
-  for (let i = 0; i < myStr.length - 1; i++) {
+  for (let i = 0; i <= myStr.length - 1; i++) {
     if (myStr[i] === myChar) {
       count++;
     }
