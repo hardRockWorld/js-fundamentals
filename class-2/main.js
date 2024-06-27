@@ -154,3 +154,20 @@ console.log(
     "B"
   )
 );
+
+// another way of solving the problem with less lines of code
+
+const countChars = (myStr, myChar) => {
+  let count = 0;
+  for (let i = 0; i <= myStr.length - 1; i++) {
+    myStr[i] === "myChar" && count++;
+  }
+  return count;
+};
+
+console.log(
+  countChar(
+    "This is my favorite book shop, and I like this business. Big Business Man!",
+    "B"
+  )
+);
