@@ -59,11 +59,7 @@ console.log(board);
 // we have introduced the standard function (Math.min) that returns its smallest argument. we can build something like that now. write a function min that takes 2 args and returns their minimum.
 
 const returnMin = (num1, num2) => {
-  if (num1 < num2) {
-    return num1;
-  } else {
-    return num2;
-  }
+  return num1 < num2 ? num1 : num2;
 };
 
-console.log(returnMin(76, 52));
+console.log(returnMin(12, 52));
