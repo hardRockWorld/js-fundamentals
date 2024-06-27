@@ -62,4 +62,6 @@ const returnMin = (num1, num2) => {
   return num1 < num2 ? num1 : num2;
 };
 
-console.log(returnMin(12, 52));
+console.log(returnMin(10, 23));
+console.log(returnMin(12, 12));
+console.log(returnMin(26, 5));
