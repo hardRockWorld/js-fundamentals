@@ -65,3 +65,31 @@ const returnMin = (num1, num2) => {
 console.log(returnMin(10, 23));
 console.log(returnMin(12, 12));
 console.log(returnMin(26, 5));
+
+// 4. Recursion
+// We've seen that the % (modulo/remainder operator) can be used to test whether a number is even or odd by using %2, to see whether it is divisible by 2 or not. There is another way to define whether a positive whole number is even or odd.
+
+// hint:
+// zero is even
+// one is odd
+// two is even
+// for any other number N, it's evenness is same as N-2
+
+// Define a recursive function isEven corresponding to this above description. The function should accept a single parameter (a positive, whole number) and return a boolean.
+// Test it on 50 and 75. See how it behaves on -1. Why? Why not? Write out the steps you'd need to take to make it work.
+
+// my-solution
+
+function isEven(num) {
+  // check if the number is 0, then return true by default else do something for other numbers
+  if (num === 0) {
+    return true;
+  } else if (num === 1) {
+    return false;
+  } else {
+    return isEven(num - 2);
+  }
+}
+
+console.log(isEven(50) ? "50 is Even" : " 50 is Odd");
+console.log(isEven(75) ? "75 is Even" : "75 is Odd");
