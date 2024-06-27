@@ -1,4 +1,4 @@
-1; // Looping a triangle
+// 1. Looping a triangle
 // write a loop that makes 7 calls to console.log to output the following triangle:
 // #
 // ##
@@ -24,7 +24,7 @@ while (tag2.length <= 7) {
   tag2 += "#";
 }
 
-// 2; // Chessboard
+// 2. Chessboard
 // write a program that creates a string that represents an 8x8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
 // passing the string to console.log should show something like this:
 
