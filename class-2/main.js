@@ -120,7 +120,7 @@ console.log(
 const countBs = (myStr) => {
   let count = 0;
 
-  for (let i = 0; i < myStr.length; i++) {
+  for (let i = 0; i < myStr.length - 1; i++) {
     if (myStr[i] === "B" || myStr[i] === "b") {
       count++;
     }
@@ -131,5 +131,26 @@ const countBs = (myStr) => {
 console.log(
   countBs(
     "This is my favorite book shop, and I like this business. Big Business Man!"
+  )
+);
+
+// Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase "B" characters). Rewrite countBs to make use of this new function.
+
+// my-solution
+
+const countChar = (myStr, myChar) => {
+  let count = 0;
+  for (let i = 0; i < myStr.length - 1; i++) {
+    if (myStr[i] === myChar) {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(
+  countChar(
+    "This is my favorite book shop, and I like this business. Big Business Man!",
+    "B"
   )
 );
