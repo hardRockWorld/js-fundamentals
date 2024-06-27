@@ -109,3 +109,27 @@ console.log(
 // result: throws error => maximum call stack size exceeded, but why?
 // because: since, we gave the -1 as parameter, then the 2 checks fail, for 0,1 and then it moves to the 3rd check where it meets the isEven recursive function which calculates the number -2
 // so, we get like this: isEven(-1 - 2), which is equals to : isEven(-3), therefore, again the number becomes -3, instead of -1. which always increases to -5, -7, -9, etc due to recursion. So, it does not end the function, gets into a never ending function call, and only stops when the memory taps out.
+
+// 5. Bean Counting
+// You can get the Nth character, or letter, from a string by writing "String"[N]. The returned value will be a string containing only one character (for example, "b"). The first character has the position 0, which causes the last character to be found at position string.length - 1. In other words, a two-character string has length 2, and it's characters have position 0 and 1.
+
+// Write a function countBs which takes a string as it's only arg, and returns a number that indicates how many uppercase or lowercase "B"/"b" characters are there in the string.
+
+// my-solution
+
+const countBs = (myStr) => {
+  let count = 0;
+
+  for (let i = 0; i < myStr.length; i++) {
+    if (myStr[i] === "B" || myStr[i] === "b") {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(
+  countBs(
+    "This is my favorite book shop, and I like this business. Big Business Man!"
+  )
+);
