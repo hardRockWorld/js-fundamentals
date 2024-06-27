@@ -93,3 +93,9 @@ function isEven(num) {
 
 console.log(isEven(50) ? "50 is Even" : " 50 is Odd");
 console.log(isEven(75) ? "75 is Even" : "75 is Odd");
+
+// check it on -1?
+console.log(isEven(-1) ? "-1 is Even" : "-1 is Odd");
+// result: throws error => maximum call stack size exceeded, but why?
+// because: since, we gave the -1 as parameter, then the 2 checks fail, for 0,1 and then it moves to the 3rd check where it meets the isEven recursive function which calculates the number -2
+// so, we get like this: isEven(-1 - 2), which is equals to : isEven(-3), therefore, again the number becomes -3, instead of -1. which always increases to -5, -7, -9, etc due to recursion. So, it does not end the function, gets into a never ending function call, and only stops when the memory taps out.
