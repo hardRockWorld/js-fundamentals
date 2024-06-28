@@ -59,3 +59,16 @@ function isIsogram3(str) {
 console.log(isIsogram2("Dermatoglyphics"));
 console.log(isIsogram2("aba"));
 console.log(isIsogram2("moOse"));
+
+// or
+
+function isIsogram4(str) {
+  return (
+    str.length ===
+    [...str.toLowerCase()].map((c, i) => i).filter((i, j) => i === j).length
+  );
+}
+
+console.log(isIsogram2("Dermatoglyphics"));
+console.log(isIsogram2("aba"));
+console.log(isIsogram2("moOse"));
