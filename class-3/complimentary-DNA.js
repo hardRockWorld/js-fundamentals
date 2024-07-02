@@ -25,3 +25,6 @@ function DNAStrand(dna) {
     })
     .join("");
 }
+
+console.log(DNAStrand("ATTGC"));
+console.log(DNAStrand("GTAT"));
