@@ -40,3 +40,11 @@ function countBy2(x, n) {
 
 console.log(countBy2(1, 10));
 console.log(countBy2(2, 5));
+
+// make more concise
+function countBy3(x, n) {
+    return Array.from({length: n}, (v, i) => (i + 1) * x);
+}
+
+console.log(countBy3(1, 10));
+console.log(countBy3(2, 5));
