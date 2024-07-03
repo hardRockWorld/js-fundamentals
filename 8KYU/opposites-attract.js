@@ -23,3 +23,12 @@ function lovefunc1(flower1, flower2){
 console.log(lovefunc1(2, 2));
 console.log(lovefunc1(2, 3));
 console.log(lovefunc1(3, 3));
+
+// more simplify
+function lovefunc2(flower1, flower2) {
+    return flower1 % 2 !== flower2 % 2;
+}
+
+console.log(lovefunc2(2, 2));
+console.log(lovefunc2(2, 3));
+console.log(lovefunc2(3, 2));
