@@ -1,0 +1,4 @@
+# write this gitignore for skipping the.idea folder and the vscode folder
+
+.idea
+.vscode
